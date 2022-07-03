@@ -2,7 +2,10 @@
 
 public partial class App : Application
 {
-	public App()
+    public const string CallbackUri = "onshopping";
+    public static readonly string CallbackScheme = $"{CallbackUri}:/authenticated";
+    public static readonly string SignoutCallbackScheme = $"{CallbackUri}:/signout-callback-oidc";
+    public App()
 	{
 		InitializeComponent();
 

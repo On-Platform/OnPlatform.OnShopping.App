@@ -28,5 +28,19 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleURLName</key>
+      <string>OnShopping Authentication</string>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>onshopping:/authenticated</string>
+        <string>onshopping:/signout-callback-oidc</string>
+      </array>
+      <key>CFBundleTypeRole</key>
+      <string>Editor</string>
+    </dict>
+  </array>
 </dict>
 </plist>
