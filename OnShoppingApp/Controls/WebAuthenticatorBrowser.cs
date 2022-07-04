@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using IBrowser = IdentityModel.OidcClient.Browser.IBrowser;
 
-namespace OnShoppingApp.Controls
+namespace OnPlatform.OnShopping.App.Controls
 {
     internal class WebAuthenticatorBrowser : IBrowser
     {

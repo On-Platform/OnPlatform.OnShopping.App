@@ -1,6 +1,6 @@
-﻿using OnShoppingApp.Annotations;
-using OnShoppingApp.Models;
-using OnShoppingApp.Services;
+﻿using OnPlatform.OnShopping.App.Annotations;
+using OnPlatform.OnShopping.App.Models;
+using OnPlatform.OnShopping.App.Services;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Net;
@@ -8,7 +8,7 @@ using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 
-namespace OnShoppingApp;
+namespace OnPlatform.OnShopping.App;
 
 public partial class MainPage : ContentPage, INotifyPropertyChanged
 {

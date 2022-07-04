@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OnShoppingApp.Models;
+using OnPlatform.OnShopping.App.Models;
 
-namespace OnShoppingApp.Extensions
+namespace OnPlatform.OnShopping.App.Extensions
 {
     public static class IdentityClientExtensions
     {

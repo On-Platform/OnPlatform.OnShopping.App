@@ -1,11 +1,11 @@
 ﻿using IdentityModel.OidcClient.Results;
 using IdentityModel.OidcClient;
-using OnShoppingApp.Controls;
-using OnShoppingApp.Services.Abstractions;
-using OnShoppingApp.Extensions;
-using OnShoppingApp.Models;
+using OnPlatform.OnShopping.App.Controls;
+using OnPlatform.OnShopping.App.Services.Abstractions;
+using OnPlatform.OnShopping.App.Extensions;
+using OnPlatform.OnShopping.App.Models;
 
-namespace OnShoppingApp.Services
+namespace OnPlatform.OnShopping.App.Services
 {
     public class IdentityService : IIdentityService
     {

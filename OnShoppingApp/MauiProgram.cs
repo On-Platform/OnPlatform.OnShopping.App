@@ -1,4 +1,4 @@
-﻿namespace OnShoppingApp;
+﻿namespace OnPlatform.OnShopping.App;
 
 public static class MauiProgram
 {

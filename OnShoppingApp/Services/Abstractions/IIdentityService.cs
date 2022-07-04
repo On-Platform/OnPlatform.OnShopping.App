@@ -1,4 +1,4 @@
-﻿namespace OnShoppingApp.Services.Abstractions
+﻿namespace OnPlatform.OnShopping.App.Services.Abstractions
 {
     public interface IIdentityService
     {

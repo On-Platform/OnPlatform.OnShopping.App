@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace OnShoppingApp;
+namespace OnPlatform.OnShopping.App;
 
 #if DEBUG
 [Application(NetworkSecurityConfig = "@xml/network_security_config")]

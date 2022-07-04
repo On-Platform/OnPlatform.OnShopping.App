@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnShoppingApp.Models
+namespace OnPlatform.OnShopping.App.Models
 {
     public class ClientCredentials
     {

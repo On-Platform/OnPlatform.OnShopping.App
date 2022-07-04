@@ -2,7 +2,7 @@
 using Android.Content.PM;
 using Droid = Android;
 
-namespace OnShoppingApp.Platforms.Android
+namespace OnPlatform.OnShopping.App.Platforms.Android
 {
     [Activity(NoHistory = true, LaunchMode = LaunchMode.SingleTop, Exported = true)]
     [IntentFilter(new[] { Droid.Content.Intent.ActionView },

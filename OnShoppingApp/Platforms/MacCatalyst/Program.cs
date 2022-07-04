@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace OnShoppingApp;
+namespace OnPlatform.OnShopping.App;
 
 public class Program
 {
