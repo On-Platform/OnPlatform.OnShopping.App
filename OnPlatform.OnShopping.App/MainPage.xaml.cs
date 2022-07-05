@@ -1,5 +1,5 @@
-﻿using OnPlatform.OnShopping.App.Annotations;
-using OnPlatform.OnShopping.App.Models;
+﻿using OnPlatform.Net.Auth.Models;
+using OnPlatform.OnShopping.App.Annotations;
 using OnPlatform.OnShopping.App.Services;
 using System.ComponentModel;
 using System.Diagnostics;

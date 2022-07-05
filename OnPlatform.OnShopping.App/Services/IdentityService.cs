@@ -3,7 +3,7 @@ using IdentityModel.OidcClient;
 using OnPlatform.OnShopping.App.Controls;
 using OnPlatform.OnShopping.App.Services.Abstractions;
 using OnPlatform.OnShopping.App.Extensions;
-using OnPlatform.OnShopping.App.Models;
+using OnPlatform.Net.Auth.Models;
 
 namespace OnPlatform.OnShopping.App.Services
 {

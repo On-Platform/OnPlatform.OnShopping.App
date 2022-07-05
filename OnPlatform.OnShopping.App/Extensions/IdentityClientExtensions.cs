@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OnPlatform.OnShopping.App.Models;
+using OnPlatform.Net.Auth.Models;
 
 namespace OnPlatform.OnShopping.App.Extensions
 {
