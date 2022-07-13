@@ -1,10 +1,11 @@
 ﻿using IdentityModel.OidcClient.Browser;
+using OnPlatform.Net.Auth.Abstractions;
+using OnPlatform.Net.Auth.Services;
 using System.Diagnostics;
-using IBrowser = IdentityModel.OidcClient.Browser.IBrowser;
 
 namespace OnPlatform.OnShopping.App.Controls
 {
-    internal class WebAuthenticatorBrowser : IBrowser
+    public class WebAuthenticatorBrowser : IIdentityBrowser
     {
         private readonly string _callbackUrl;
 

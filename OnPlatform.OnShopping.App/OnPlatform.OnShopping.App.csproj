@@ -49,15 +49,29 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="lib\**" />
+	  <Compile Remove="lib\**" />
+	  <EmbeddedResource Remove="lib\**" />
+	  <MauiCss Remove="lib\**" />
+	  <MauiXaml Remove="lib\**" />
+	  <None Remove="lib\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Platforms\Android\Resources\xml\network_security_config.xml" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="IdentityModel.OidcClient" Version="5.0.0" />
+	  <PackageReference Include="Prism.DryIoc.Maui" Version="8.1.228-beta" />
+	  <PackageReference Include="Prism.Microsoft.DependencyInjection.Extensions" Version="8.0.62" />
+	  <PackageReference Include="Refit" Version="6.3.2" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Extensions\" />
 	  <Folder Include="Models\" />
+	  <Folder Include="Services\Abstractions\" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -67,6 +81,12 @@
 	  <Reference Include="OnPlatform.Net.Core">
 	    <HintPath>lib\OnPlatform.Net.Core.dll</HintPath>
 	  </Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">

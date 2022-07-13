@@ -1,6 +1,8 @@
 ﻿using OnPlatform.Net.Auth.Models;
+using OnPlatform.Net.Auth.Services;
 using OnPlatform.OnShopping.App.Annotations;
-using OnPlatform.OnShopping.App.Services;
+using OnPlatform.OnShopping.App.ViewModels;
+using OnPlatform.OnShopping.App.Views;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Net;
@@ -13,14 +15,15 @@ namespace OnPlatform.OnShopping.App;
 public partial class MainPage : ContentPage, INotifyPropertyChanged
 {
     int count = 0;
-
-    public MainPage()
+    INavigationService _navigation;
+    public MainPage(INavigationService navigation, IIdentityService identityService)
     {
+        _navigation = navigation;
         InitializeComponent();
         this.BindingContext = this;
 
         const string scope = "openid onShoppingApi.read";
-        _oidcIdentityService = new IdentityService("onShoppingAuth", App.CallbackScheme, App.SignoutCallbackScheme, scope, AuthorityUrl, "OnPlatform");
+        _oidcIdentityService = identityService;
         ExecuteLogin = new Command(Login);
         ExecuteRefresh = new Command(RefreshTokens);
         ExecuteLogout = new Command(Logout);
@@ -43,7 +46,7 @@ public partial class MainPage : ContentPage, INotifyPropertyChanged
         private const string AuthorityUrl = "https://onplatformidserverstaging.azurewebsites.net";
 #endif
     private ClientCredentials? _credentials;
-    private readonly IdentityService _oidcIdentityService;
+    private readonly IIdentityService _oidcIdentityService;
 
     public ICommand ExecuteLogin { get; }
     public ICommand ExecuteRefresh { get; }
