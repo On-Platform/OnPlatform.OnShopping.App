@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>OnShoppingApp</ApplicationTitle>
+		<ApplicationTitle>On Shopping</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.onshoppingapp</ApplicationId>

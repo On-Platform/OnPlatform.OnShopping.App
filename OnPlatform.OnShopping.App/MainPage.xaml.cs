@@ -107,6 +107,7 @@ public partial class MainPage : ContentPage, INotifyPropertyChanged
         UpdateCredentials(credentials);
     }
 
+    
     private async void Logout()
     {
         await _oidcIdentityService.Logout(_credentials?.IdentityToken);
